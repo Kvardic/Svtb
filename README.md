@@ -1,5 +1,4 @@
-<div>
-<center>Testovací stránka:</center>
+# Testovací stránka:
 
-<center>https://kvardic.github.io</center>
-</div>
+# https://kvardic.github.io
+
