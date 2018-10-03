@@ -1,4 +1,4 @@
-body {
+			body {
 				font-size: 18px;
 			}
 
@@ -11,8 +11,46 @@ body {
 				position: -webkit-sticky;
 				position: sticky;
 				top: 0;
+				opacity: 1;
 			}
-
+			.header {
+				font-size: 18px;
+				text-align: center;	
+				font-family: "verdana";
+				color: black;
+				height: 100px;
+				width: 1333px;
+			}
+			
+			.navbar {
+				font-size: 18px;
+				font-family: "verdana";
+				color: white;
+			}
+			
+			.contacts {
+				text-align: center;
+				font-family: "Verdana";
+				font-size: 15px;
+			}
+			
+			.contactsheader {
+				text-align: center;
+				font-family: "Verdana";
+				font-size: 22px;	
+			}
+			
+			.about {
+				text-align: center;
+				font-family: "Verdana";
+				font-size: 18px;	
+			}
+			
+			.osmmap {
+				margin-left: 1250px;
+				margin-right: 0px;	
+			}
+			
 			li {
 				float: left;
 			}
@@ -22,7 +60,7 @@ body {
 				color: white;
 				text-align: center;
 				padding: 14px 16px;
-				text-decoration: none;
+				text-decoration: initial;
 			}
 
 			li a:hover {
@@ -31,6 +69,9 @@ body {
 
 			.active {
 				background-color: #B40404;
+				font-size: 18px;
+				font-family: "verdana";
+				color: white;
 			}
 			img {
 				display: block;
@@ -40,7 +81,7 @@ body {
 			}
 			.blokovacisteni {
 				position:relative;
-				left:25%;
+				left:18%;
 				background-repeat:no-repeat;
 				background-position:0px 0px;
 				width:270px;
@@ -54,10 +95,12 @@ body {
 				line-height:4200%;
 				font-family: "Verdana";
 				font-size:20px;
+				border: 5px solid black;
+				text-decoration: initial;
 			}
 			.uzavirky {
 				position:relative;
-				left:45%;
+				left:40%;
 				background-repeat:no-repeat;
 				background-position:-80px -70px;
 				width:270px;
@@ -71,6 +114,8 @@ body {
 				line-height:4200%;
 				font-family: "Verdana";
 				font-size:20px;
+				border: 5px solid black;
+				text-decoration: initial;
 			}
 			.blokovacisteni:hover{opacity: 1.0;}
 			.uzavirky:hover{opacity: 1.0;}
