@@ -330,7 +330,7 @@
 			.column {
 			    float: left;
 			    width: 25%;
-			    padding: 5px;
+			    padding: 0px;
 			}
 
 
@@ -389,7 +389,25 @@
 
 			}	
 
-			.active, .overlay_image .text, .kostely_menu, .dropbtn, .top_nav, 
+			.church_image {
+				position: relative;
+			}
+
+			.listy {
+				position: relative;
+				align-content: center;
+				width: 300px;
+				margin: 0 auto;
+			}
+
+			.list_title {
+				position: relative;
+				width: 150px;
+				margin: 0 auto;
+				font-size: 25px;
+			}
+
+			.list_title, .active, .overlay_image .text, .kostely_menu, .dropbtn, .top_nav, 
 			.main_content, .main_text, .header, .footer, .contacts, .contacts_header, .about, .blokova_cisteni, .uzavirky, .osm, .nadpis{
 				font-family: "BaiJamjuree", sans-serif;
 				font-weight: 200;
