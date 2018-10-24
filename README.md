@@ -1,1 +1,1 @@
-<strong>Testovací stránka: www.kvardic.github.io<strong>
+<strong>Testovací stránka: https://kvardic.github.io/<strong>
