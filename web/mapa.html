@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="description" content="Základní informace o kostelích v Brně.">
-		<meta name="author" content="Ondřej Kvarda" >
-			<title>Kontakt</title>
-				<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="author" content="Ondřej Kvarda">
+			<title>Mapa brněnských kostelů</title>
+				<link rel="stylesheet" type="text/css" href="style/style.css">
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-				<link rel="icon" href="cross_icon.ico">
+				<link rel="icon" href="icons-logos/cross_icon.ico">
 	</head>
 
 	<div class="container">
@@ -22,33 +22,34 @@
 		<div class="item_topbar">
 			<div class="top_nav">
 				<a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Hl. stránka</a>
-				<a href="mapa.html"><i class="fas fa-map btn"></i>&nbsp;&nbsp;Mapa kostelů</a>
+				<a class="active" href="mapa.html"><i class="fas fa-map btn"></i>&nbsp;&nbsp;Mapa kostelů</a>
 				<div class="dropdown">
 		  			<button class="dropbtn"><i class="fas fa-church"></i>&nbsp;&nbsp;&nbsp;Kostely</button>
-						<div class="dropdown-content btn">
+						<div class="dropdown-content">
 							<a href="kostely_rimkat.html">Římskokatolické</a>
 							<a href="kostely_husit.html">Husitské</a>
 							<a href="kostely_evang.html">Evangelické</a>
 						</div>
 				</div>
 				<a href="o_projektu.html"><i class="fas fa-sticky-note btn"></i>&nbsp;&nbsp;O projektu</a>
-				<a class="active" href="kontakt.html"><i class="fas fa-pen btn"></i>&nbsp;&nbsp; Kontakt</a>
+				<a href="kontakt.html"><i class="fas fa-pen btn"></i>&nbsp;&nbsp; Kontakt</a>
+			<div class="top_nav_WS">
+				<a href="WS.html">WebServices</a>
+			</div>
 
 			</div>
 		</div>
-
+		
 		<div class="item_main">
-			<div class="contacts btn">
-				
-				<p class="contacts_header"><strong>Ondřej Kvarda</strong></p>
-				<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/30740285_1946016768751373_4567173830259534482_n.jpg?_nc_cat=106&oh=45dd424bcbfd3e0ef41e82b634cc6bb3&oe=5C5786A4" width="200" height="200" alt="Fotografie autora">
-				&nbsp;
-				<p><i class="fas fa-envelope">&nbsp;&nbsp;</i><a href="mailto:451448@mail.muni.cz">451448@mail.muni.cz</a></p>
-				&nbsp;
-				<p><i class="fas fa-envelope">&nbsp;&nbsp;</i><a href="mailto:ondrej.kvarda@gmail.com">ondrej.kvarda@gmail.com</a></p>
-				&nbsp;
-				<p><i class="fas fa-phone">&nbsp;&nbsp;</i><a href="tel:+420123456789">+420 123 456 789</a></p>
-				&nbsp;
+			<div class="osm">
+					<iframe width="1850" height="1100"
+					src="https://www.openstreetmap.org/export/embed.html?bbox=16.535882949829105%2C49.16890995729407%2C16.679220199584964%2C49.21843805175996&amp;layer=mapnik" 
+					style="border: 3px solid black"></iframe>
+					<p></p>
+					<small>
+					<a target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/#map=14/49.1937/16.6076">
+					Zobrazit větší mapu (přejít na stránky OSM v novém okně)</a></small>
+					<p>&nbsp;</p>
 			</div>
 		</div>
 
@@ -56,7 +57,7 @@
 			<footer class="footer">
 				<p> made and managed by <a href="kontakt.html">Ondřej Kvarda</a>, ©2018</p>
 				<p></p>
-				<object id="logo" type="image/svg+xml" data="logo60x60_comp.svg" height="60" width="60"></object>
+				<object id="logo" type="image/svg+xml" data="icons-logos/logo60x60.svg" height="60" width="60"></object>
 			</footer>
 		</div>
 	</div>

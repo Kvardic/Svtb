@@ -1,6 +1,6 @@
 			@font-face {
 				font-family: "BaiJamjuree";
-  				src: url("BaiJamjuree-Regular.ttf");
+  				src: url("font/BaiJamjuree-Regular.ttf");
   				font-weight: 200;
 	
 			}
@@ -13,6 +13,22 @@
    				margin-right: 0px;
     			margin-bottom: 0px;
     			margin-left: 3px;
+			}
+
+			html {
+				font-family: "BaiJamjuree", sans-serif;
+				font-weight: 200;
+				position: relative;
+			}
+
+			p.o_projektu {
+				max-width: 50em;
+				text-align: justify;
+			}
+
+			p.kostely_text {
+				max-width: 50em;
+				text-align: justify;
 			}
 
 			.item_header {
@@ -39,13 +55,13 @@
 			}
 			.container {
 				display: grid;
-				grid-template-columns: 0fr auto 0fr 0fr;
+				grid-template-columns: auto;
 				grid-template-rows: 520px auto auto 10px;
 				grid-template-areas: 
-					"header header"
-					"topbar topbar"
-					"main main"
-					"footer footer";
+					"header"
+					"topbar"
+					"main"
+					"footer";
 			}
 
 			.container div {
@@ -152,6 +168,36 @@
 			    color: white;
 			}
 
+
+			.top_nav_WS {
+			   	background-color: #E6E6E6;
+			    overflow: hidden;
+			    border-radius: 0px;
+			}
+
+
+			.top_nav_WS a {
+			    float: left;
+			    color: black;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			    font-size: 20px;
+			}
+
+			
+			.top_nav_WS a:hover {
+			    background-color: #E92727;
+			    color: white;
+			    transition: 0.5s;
+			}
+
+
+			.top_nav_WS a.active {
+			    background-color: #E92727;
+			    color: white;
+			}
+
 			.main_content {
 			    margin-left: 5%;
 			    font-size: 24px; 
@@ -161,14 +207,13 @@
 
 			}
 			.main_text {
-				margin-left: 5%;
+				margin-left: 0%;
 			    font-size: 18px; 
-			    padding: 0px 10px;
-			    width: 90%;
+			    padding: 0px 0px;
 			    text-align: justify;
-			    position: sticky;
+			    position: relative;
+			    display: inline-block;
 			}
-
 
 			.btn1 {
 		    	background-color: #424242;
@@ -187,7 +232,7 @@
 				border-radius: 10px;
 				height: 520px;
 				position: relative;
-				background-image: url(CaM_comp.png);
+				background-image: url(mainPage/header.png);
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -234,6 +279,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				opacity: 1;
+				position: relative;
 			}
 			iframe {
 				display: block;
@@ -245,11 +291,11 @@
 				position: relative;
 				right:10%;
 				background-repeat:no-repeat;
-				background-position:0px 30px;
+				background-position:85px 30px;
 				width:350px;
-				height:490px;
-				background-image: url("rimkat_comp.svg");
-				background-size: 100%;
+				height:300px;
+				background-image: url("mainPage/rimkat_insignia.svg");
+				background-size: 50%;
 				display:inline-block;
 				opacity:0.5;
 				color:black;
@@ -263,11 +309,11 @@
 				position: relative;
 				left:0%;
 				background-repeat:no-repeat;
-				background-position:0px 50px;
+				background-position:90px 60px;
 				width:350px;
-				height:560px;
-				background-image: url("husit_comp.svg" );
-				background-size: 100%;
+				height:350px;
+				background-image: url("mainPage/husit_insignia.svg" );
+				background-size: 50%;
 				display:inline-block;
 				opacity:0.5;
 				color:black;
@@ -282,11 +328,11 @@
 				position: relative;
 				left:10%;
 				background-repeat:no-repeat;
-				background-position:0px 60px;
+				background-position:90px 60px;
 				width:350px;
-				height:560px;
-				background-image: url("evang_comp.svg");
-				background-size: 100%;
+				height:350px;
+				background-image: url("mainPage/evang_insignia.svg");
+				background-size: 50%;
 				display:inline-block;
 				opacity:0.5;
 				color:black;
@@ -301,11 +347,11 @@
 				position: relative;
 				left:0%;
 				background-repeat:no-repeat;
-				background-position:0px -60px;
+				background-position:175px 10px;
 				width:700px;
-				height:600px;
-				background-image: url("map_comp.svg");
-				background-size: 100%;
+				height:350px;
+				background-image: url("mainPage/mapMainPage.svg");
+				background-size: 50%;
 				display:inline-block;
 				opacity:0.5;
 				color:black;
@@ -333,6 +379,13 @@
 			    padding: 0px;
 			}
 
+			.column2 {
+			    float: none;
+			    width: 25%;
+			    padding: 0px;
+			    margin-left: 37.5%;
+			}
+
 
 			.row::after {
     			content: "";
@@ -355,19 +408,19 @@
 
 			.overlay_image .image {
 				display: block;
-				width: 80%;
+				width: auto;
 				height: auto;
 			}
 
 			.overlay_image .hover {
 				position: absolute;
-				top: 0;
+				top: 30%;
 				height: 100%;
 				width: 100%;
 				opacity: 0;
 				color: black;
 				font-size: 25px;
-				padding-top: 25%;
+				padding-top: 0%;
 
 			}
 
@@ -386,18 +439,42 @@
 				color: black;
 				font-size: 30px;
 				margin-bottom: 30px;
+				text-align: center;
+
+			}	
+
+			.nadpis2 {
+				color: black;
+				font-size: 25px;
+				margin-bottom: 30px;
+				text-align: center;
 
 			}	
 
 			.church_image {
 				position: relative;
+				display: block;
+				height: auto;
+				width: auto;
 			}
 
-			.listy {
-				position: relative;
-				align-content: center;
-				width: 300px;
-				margin: 0 auto;
+			ul .com {
+				list-style-type: none;
+			}
+
+			li object {
+				float: left;
+  				margin: 0 15px 0 0;
+			}
+
+			li p {
+				padding-top: 5px;
+				text-align: center;
+			}
+
+			li {
+				padding: 10px;
+				overflow: auto;
 			}
 
 			.list_title {
@@ -407,8 +484,15 @@
 				font-size: 25px;
 			}
 
-			.list_title, .active, .overlay_image .text, .kostely_menu, .dropbtn, .top_nav, 
-			.main_content, .main_text, .header, .footer, .contacts, .contacts_header, .about, .blokova_cisteni, .uzavirky, .osm, .nadpis{
-				font-family: "BaiJamjuree", sans-serif;
-				font-weight: 200;
+			.bohosluzby {
+				text-align: center;
+				position: relative;
+				width: 380px;
+				margin-left: 29.5%;
+				border: 2px solid black;
+
 			}
+
+
+
+			
