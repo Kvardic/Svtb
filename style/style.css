@@ -31,6 +31,13 @@
 				text-align: justify;
 			}
 
+			p.zdroj {
+				font-size: 15px;
+				margin-right: auto;
+				margin-left: auto;
+				width: 440px;
+			}
+
 			.item_header {
 				grid-area: header; 
 				background-color: white;
@@ -56,13 +63,14 @@
 			.container {
 				display: grid;
 				grid-template-columns: auto;
-				grid-template-rows: 520px auto auto 10px;
+				grid-template-rows: 200px auto auto 10px;
 				grid-template-areas: 
 					"header"
 					"topbar"
 					"main"
 					"footer";
 			}
+
 
 			.container div {
 				padding: 0px;
@@ -187,16 +195,48 @@
 
 			
 			.top_nav_WS a:hover {
-			    background-color: #E92727;
+			    background-color: #FE2E2E;
 			    color: white;
 			    transition: 0.5s;
 			}
 
 
 			.top_nav_WS a.active {
-			    background-color: #E92727;
+			    background-color: #FE2E2E;
 			    color: white;
+
 			}
+
+			.top_nav_JS {
+			   	background-color: #E6E6E6;
+			    overflow: hidden;
+			    border-radius: 0px;
+			}
+
+
+			.top_nav_JS a {
+			    float: left;
+			    color: black;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			    font-size: 20px;
+			}
+
+			
+			.top_nav_JS a:hover {
+			    background-color: #5882FA;
+			    color: white;
+			    transition: 0.5s;
+			}
+
+
+			.top_nav_JS a.active {
+			    background-color: #5882FA;
+			    color: white;
+
+			}
+
 
 			.main_content {
 			    margin-left: 5%;
@@ -230,14 +270,14 @@
 				color: black;
 				background-color: #E6E6E6;
 				border-radius: 10px;
-				height: 520px;
+				height: 200px;
 				position: relative;
 				background-image: url(mainPage/header.png);
 				background-size: cover;
 				background-repeat: no-repeat;
-				background-position: center;
+				background-position: 0px -150px;
 				overflow: hidden;
-				line-height: 18em;
+				line-height: 10em;
 				text-shadow: 3px 3px 8px black;
 			}
 
@@ -270,9 +310,6 @@
 				font-size: 20px;	
 			}
 
-			.osm {
-				text-align: center;
-			}
 
 			img {
 				display: block;
@@ -373,11 +410,13 @@
 
 			}
 
+
 			.column {
 			    float: left;
 			    width: 25%;
 			    padding: 0px;
 			}
+
 
 			.column2 {
 			    float: none;
@@ -385,7 +424,7 @@
 			    padding: 0px;
 			    margin-left: 37.5%;
 			}
-
+			
 
 			.row::after {
     			content: "";
@@ -458,23 +497,58 @@
 				width: auto;
 			}
 
+			.responsive {
+			    padding: 0 6px;
+			    float: left;
+			    width: 24.99999%;
+			}
+
+			@media only screen and (max-width: 700px) {
+			    .responsive {
+			        width: 49.99999%;
+			        margin: 6px 0;
+			    }
+			}
+
+			@media only screen and (max-width: 500px) {
+			    .responsive {
+			        width: 100%;
+			    }
+			}
+
 			ul .com {
 				list-style-type: none;
+				margin: 0;
+    			padding: 0;
 			}
 
 			li object {
+				list-style-type : none;
+				margin-left: auto;
+				margin-right: auto;
 				float: left;
-  				margin: 0 15px 0 0;
 			}
 
 			li p {
-				padding-top: 5px;
+				padding-top: 0px;
 				text-align: center;
+				height: 65px;
+				list-style-type : none;
+				font-size: 20px;
 			}
 
-			li {
-				padding: 10px;
+			li.white {
+				padding: 12px;
 				overflow: auto;
+				background-color: white;
+				list-style-type : none;
+			}
+
+			li.grey {
+				padding: 12px;
+				overflow: auto;
+				background-color: lightgrey;
+				list-style-type : none;
 			}
 
 			.list_title {
@@ -487,10 +561,52 @@
 			.bohosluzby {
 				text-align: center;
 				position: relative;
-				width: 380px;
-				margin-left: 29.5%;
+				width: 370px;
+				margin-left: auto;
+				margin-right: auto;
 				border: 2px solid black;
+				background-color: lightgrey;
 
+			}
+
+			h2.java_script {
+				font-size: 20px;
+				text-align: center;
+			}
+
+			form.scale1 {
+				position: relative;
+				background-color: #E6E6E6;
+				border: 2px solid grey;
+				width: 550px;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 20px;
+			}
+
+
+			div#map {
+				width: 95vw;
+				height:95vh;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 60px;
+				border-style: solid;
+			}
+
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.info {
+ 				padding: 10px 10px;
+				font: 12px/18px BaiJamjuree, sans-serif;
+				background:  #E6E6E6;
+				box-shadow: 0 0 10px 0 #424242;
+				border-radius: 20px;
+				width: 100px;
 			}
 
 

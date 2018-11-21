@@ -8,6 +8,9 @@
 				<link rel="stylesheet" type="text/css" href="style/style.css">
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 				<link rel="icon" href="icons-logos/cross_icon.ico">
+				<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   				integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   				crossorigin="">
 	</head>
 
 	<div class="container">
@@ -35,23 +38,19 @@
 				<a href="kontakt.html"><i class="fas fa-pen btn"></i>&nbsp;&nbsp; Kontakt</a>
 			<div class="top_nav_WS">
 				<a href="WS.html">WebServices</a>
+			<div class="top_nav_JS">
+				<a href="JS.html">JavaScript</a>
+			</div>	
 			</div>
 
 			</div>
 		</div>
 		
-		<div class="item_main">
-			<div class="osm">
-					<iframe width="1850" height="1100"
-					src="https://www.openstreetmap.org/export/embed.html?bbox=16.535882949829105%2C49.16890995729407%2C16.679220199584964%2C49.21843805175996&amp;layer=mapnik" 
-					style="border: 3px solid black"></iframe>
-					<p></p>
-					<small>
-					<a target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/#map=14/49.1937/16.6076">
-					Zobrazit větší mapu (přejít na stránky OSM v novém okně)</a></small>
-					<p>&nbsp;</p>
-			</div>
+		<div id="map">
+
 		</div>
+
+		
 
 		<div class="item_footer">
 			<footer class="footer">
@@ -61,4 +60,8 @@
 			</footer>
 		</div>
 	</div>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   	integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+    <script src=scripts/mapScript.js></script>
 </html>
