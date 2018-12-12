@@ -208,6 +208,9 @@
   .leaflet-sidebar-right.collapsed ~ .leaflet-control-container .leaflet-right {
     right: 50px; } }
 
+a:link {
+  color: black;
+}
 
 a:visited {
   color: black;
