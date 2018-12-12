@@ -81,6 +81,27 @@
 				margin-top: 5px;
 			}
 
+			.mapcontainer {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 0px 0px auto 10px;
+				grid-template-areas: 
+					"header"
+					"topbar"
+					"main"
+					"footer";
+			}
+
+
+			.mapcontainer div {
+				padding: 0px;
+				
+				}
+
+			.mapcontainer p {
+				margin-top: 5px;
+			}
+
 			* {
 				margin: 0px;
 			}
@@ -237,6 +258,37 @@
 
 			}
 
+			.maptop_nav {
+			   	background-color: #E6E6E6;
+			    overflow: hidden;
+			    border-radius: 10px;
+			    width: 15vh;
+			    height: 5vh;
+			    margin-left: 10px;
+			}
+
+
+			.maptop_nav a {
+			    float: left;
+			    color: black;
+			    text-align: center;
+			    width: inherit;
+			    height: inherit;
+			    text-decoration: none;
+			    font-size: 20px;
+			    padding-top: 3px;
+			    position: relative;
+			}
+
+			
+			.maptop_nav a:hover {
+			    background-color: #424242;
+			    color: white;
+			    transition: 0.5s;
+			    width: inherit;
+			    height: inherit;
+			}
+
 
 			.main_content {
 			    margin-left: 5%;
@@ -275,10 +327,10 @@
 				background-image: url(mainPage/header.png);
 				background-size: cover;
 				background-repeat: no-repeat;
-				background-position: 0px -150px;
+				background-position: bottom;
 				overflow: hidden;
 				line-height: 10em;
-				text-shadow: 3px 3px 8px black;
+				text-shadow: 3px 3px 8px white;
 			}
 
 			.footer {
@@ -293,6 +345,21 @@
 				border-radius: 10px;
 				margin-top: 50px;
 				margin-left: 5%;
+			}
+
+			.mapfooter {
+				position: relative;
+   				bottom: 0%;
+   				width: auto;
+   				height: auto;
+				background-color: #E6E6E6;
+				font-size: 12px;
+				text-align: center;
+				padding-top: 1px;
+				padding-bottom: 1px;
+				border-radius: 10px;
+				margin-top: 0px;
+				
 			}
 			
 			.contacts {
@@ -419,7 +486,7 @@
 
 
 			.column2 {
-			    float: none;
+			    float: left;
 			    width: 25%;
 			    padding: 0px;
 			    margin-left: 37.5%;
@@ -455,7 +522,7 @@
 				position: absolute;
 				top: 30%;
 				height: 100%;
-				width: 100%;
+				width: 102%;
 				opacity: 0;
 				color: black;
 				font-size: 25px;
@@ -586,11 +653,12 @@
 
 
 			div#map {
-				width: 95vw;
-				height:95vh;
+				width: 98vw;
+				height:93vh;
 				margin-left: auto;
 				margin-right: auto;
-				margin-top: 60px;
+				margin-top: 3.5vh;
+				margin-bottom: 1vh;
 				border-style: solid;
 			}
 
@@ -605,10 +673,23 @@
 				font: 12px/18px BaiJamjuree, sans-serif;
 				background:  #E6E6E6;
 				box-shadow: 0 0 10px 0 #424242;
-				border-radius: 20px;
+				border-radius: 8px;
 				width: 100px;
+				height: 270px;
+			}
+
+			.info2 {
+ 				padding: 5px 5px;
+				font: 10px BaiJamjuree, sans-serif;
+				background:  #E6E6E6;
+				box-shadow: 0 0 10px 0 #424242;
+				border-radius: 8px;
+				width: 150px;
 			}
 
 
 
-			
+
+
+
+
