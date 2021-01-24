@@ -35,7 +35,7 @@
 
       direction = -event.deltaY;
 
-      if (direction < 0) {
+      if (direction < 1) {
         // next
         if (currentSlide + 1 >= $slides.length) {
           return;

@@ -3,32 +3,52 @@
     
 <head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 <title>JO!</title>
 </head>
     
 <body>
-    
-<div class="extent" id="ext1">
-    
+
+<div id="extent1" class="extent">
+
 <div class="header">
     
 <img id="logo" src="Logo.png">
     
 </div>
+
+</div>
+    
+<div id="extent2" class="extent">
+
+<div class="inquiries">
+    
+<p class="inq">Kdo?</p>
+<p class="ans"><span style="color:black; font-size:3vw">O</span>ndřej KVARDA <span style="font-size:2vw; font-family:roboto-regular">&</span> <span style="color:black; font-size:3vw">J</span>ana VAŇKOVÁ</p>
+    
+<p class="inq">Kdy?</p>
+<p class="ans">12. 02. 2021 02:00pm</p>
+    
+<p class="inq">Kde?</p>
+<p class="ans">kostel sv. Michala v Brně</p>
+    
+</div>
+
+</div>
    
-</div>
-
-<div class="extent" id="ext2">
+<div id="extent3" class="extent">
     
-<p class="header">kek</p>
-
-</div>
-
+<div id="map"></div>
     
+</div>
+    
+
+<div id="extent4" class="extent"></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <script src="jquery-3.5.1.js"></script>
 <script src="script.js"></script>
-
+<script src="map.js"></script>
 </body>
-    
     
 </html>
