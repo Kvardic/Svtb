@@ -1,0 +1,74 @@
+@font-face {
+    font-family: simplifica;
+    src: url(simplifica.ttf);
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(Roboto-Thin.ttf);
+}
+
+body, html {
+    font-family: simplifica;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#ext1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;  
+}
+
+#ext2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background: lightgrey;   
+}
+
+.header {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+    font-size: 50px;
+}
+
+.cont {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+    background: red;
+}
+
+#logo {
+    height: 40%;
+    width: 40%;
+    pointer-events: none;
+}
+
+
+
+
+
+
