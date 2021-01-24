@@ -1,2 +1,2 @@
-# kvardic.github.io
+www.kvardic.github.io
 
