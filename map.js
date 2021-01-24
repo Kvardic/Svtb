@@ -28,5 +28,5 @@ L.marker([49.19355741325973, 16.60659572870174], {icon: greenIcon}).addTo(map)
     .bindPopup(customPopup,customOptions)
     .openPopup();
 
-map.attributionControl.setPrefix('© Ondřej Kvarda 2021 | <a href=https://leafletjs.com/>Leaflet</a>')
+
 
