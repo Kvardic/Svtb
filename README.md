@@ -1,2 +1,1 @@
-www.kvardic.github.io/index.html
-
+www.kvardic.github.io
