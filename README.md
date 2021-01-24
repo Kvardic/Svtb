@@ -1,2 +1,1 @@
-www.kvardic.github.io
-
+https://kvardic.github.io/
