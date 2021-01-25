@@ -1,5 +1,5 @@
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    alert("Stránka není plně optimalizována pro mobilní zařízení.");
+    alert("Stránka není plně optimalizována pro mobilní zařízení; některé prvky se tedy nemusí zobrazovat korektně. Pro plnou kompatibilitu si stránku zobrazte na stolním počítači, nebo notebooku.");
 }
 
 (function($) {
