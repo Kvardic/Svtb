@@ -1,3 +1,7 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    alert("Stránka není plně optimalizována pro mobilní zařízení.");
+}
+
 (function($) {
   var selector = ".extent";
   var direction;
