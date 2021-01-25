@@ -13,7 +13,7 @@
 
 <div class="header">
     
-<img id="logo" src="Logo.png">
+<img id="logo" src="Pictures/Logo.png">
     
 </div>
 
@@ -24,13 +24,20 @@
 <div class="inquiries">
     
 <p class="inq">Kdo?</p>
-<p class="ans"><span style="color:black; font-size:3vw">O</span>ndřej KVARDA <span style="font-size:2vw; font-family:roboto-regular">&</span> <span style="color:black; font-size:3vw">J</span>ana VAŇKOVÁ</p>
+<p class="ans"><span style="color:#333333; font-size:3vw">O</span>ndřej KVARDA <span style="font-size:2vw; font-family:roboto-regular">&</span> <span style="color:#333333; font-size:3vw">J</span>ana VAŇKOVÁ</p>
     
+<hr>
+
 <p class="inq">Kdy?</p>
-<p class="ans">12. 02. 2021 02:00pm</p>
-    
-<p class="inq">Kde?</p>
+<p class="ans" id="FB">12. 02. 2021 02:00pm</p>
+<p class="ans" id="little">(Obřad bude nejspíš streamován na platformě Facebook – odkaz níže.)</p>
+<p class="ans" id="FBlink"><a href="https://funnyjunk.com/>" target="_blank"><img id="FBlogo" src="Pictures/FBlogo.svg"></a></p>
+
+<hr>
+
+<p class="inq">Kde?
 <p class="ans">kostel sv. Michala v Brně</p>
+    
     
 </div>
 
@@ -43,12 +50,32 @@
 </div>
     
 
-<div id="extent4" class="extent"></div>
+<div id="extent4" class="extent">
+    
+<div class="information">
+    
+<p class="infoh">Informace</p>
+    
+<p class="infot">BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA</p>
+    
+</div>
+    
+</div>
+    
+<div id="extent5" class="extent">
+
+<div class="mail">
+<p>Vzkazy či dotazy</p>
+<p class="bold">ondrej.kvarda@gmail.com</p>
+</div>
+    
+</div>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-<script src="jquery-3.5.1.js"></script>
-<script src="script.js"></script>
-<script src="map.js"></script>
+<script src="scripts/leaflet.ajax.js"></script>
+<script src="scripts/jquery-3.5.1.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/map.js"></script>
 </body>
     
 </html>
