@@ -90,13 +90,7 @@ html, body {
     font-size: 2.5vw;
     color: #333333;
     margin-bottom: 4vw;
-    width: 60vw;
-}
-
-@media only screen and (max-width: 600px) {
-  .ans {
-    font-size: 10vw;
-  }
+    width: 40vw;
 }
 
 .ans#little {
@@ -170,6 +164,8 @@ p {
 
 
 /* LEAFLET */
+
+
 .leaflet-popup {
     position: absolute;
     text-align: center;
@@ -264,4 +260,92 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #8c8c8c;
+}
+
+
+/* MOBILE */
+
+
+@media only screen and (max-width: 400px) {
+    .inq {
+        font-size: 4.7vw;
+        margin-bottom: -3vw;
+    }
+    
+    .ans {
+        font-size: 5vw;
+        width: 80vw;
+    }
+    
+    .ans#FB {
+        font-size: 5vw;
+    }
+    
+    .ans#little {
+        font-size: 2.5vw;
+    }
+    
+    #FBlogo {
+        height: 8%;
+        width: 8%;
+    }
+    
+    #logo {
+        height: 60%;
+        width: 60%;
+    }
+    
+    .infoh {
+        font-size: 5vw;
+    }
+    
+    .infot {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    
+    .mail {
+        font-size: 5vw;
+    }
+    
+    #map {
+        height: 50vh;
+        width: 70vw;
+        margin: 0 auto;
+        margin-top: 24vh;
+        border: 5px solid #333333;
+    }
+    
+    .church .leaflet-popup-content-wrapper {
+        height: auto;
+        width: auto;
+        padding: 0.8vw;
+    }
+    
+    .church .leaflet-popup-content {
+        font-size: 4vw;
+        margin: 1.5vw auto; 
+    }
+    
+    .tram .leaflet-popup-content-wrapper {
+        height: auto;
+        width: auto;
+        padding: 0.8vw;
+    }
+    
+    .tram .leaflet-popup-content {
+        font-size: 4vw;
+        margin: 1.5vw auto;
+    }
+    
+    .parking.leaflet-popup-content-wrapper {
+        height: auto;
+        width: auto;
+        padding: 0.8vw;
+    }
+    
+    .parking .leaflet-popup-content {
+        font-size: 4vw;
+        margin: 1.5vw auto;
+    }
 }
