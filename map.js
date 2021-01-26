@@ -13,7 +13,7 @@ var churchIcon = new L.Icon({
   //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [-105, 15],
+  popupAnchor: [-80, 10],
   //shadowSize: [41, 35]
 });
 
@@ -22,7 +22,7 @@ var parkingIcon = new L.Icon({
   //shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [-85, 50],
+  popupAnchor: [-60, 45],
   //shadowSize: [41, 35]
 });
 
@@ -30,36 +30,36 @@ var tram4a9icon = new L.Icon({
   iconUrl: 'Pictures/tram4a9.svg',
   iconSize: [54, 86],
   iconAnchor: [12, 41],
-  popupAnchor: [105, 40],
+  popupAnchor: [79, 37],
 });
 
 var tram5a6icon = new L.Icon({
   iconUrl: 'Pictures/tram5a6.svg',
   iconSize: [54, 86],
   iconAnchor: [12, 41],
-  popupAnchor: [-110, 42],
+  popupAnchor: [-82, 38],
 });
 
 var tram12icon = new L.Icon({
   iconUrl: 'Pictures/tram12.svg',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [1, 65],
+  popupAnchor: [1, 55],
 });
 
 
 // POPUPS //
 
 
-var churchPopup = "<b>kostel sv. Michala"
+var churchPopup = "kostel sv. Michala"
 
-var parkingPopup = "<b>Domini Park"
+var parkingPopup = "Domini Park"
 
-var tram4a9Popup = "<b>Zelný trh"
+var tram4a9Popup = "Zelný trh"
 
-var tram5a6Popup = "<b>Šilingrovo náměstí"
+var tram5a6Popup = "Šilingrovo náměstí"
 
-var tram12Popup = "<b>Šilingrovo náměstí"
+var tram12Popup = "Šilingrovo náměstí"
    
 
 // STYLES //
@@ -69,7 +69,6 @@ var churchPopupStyle =
         {
         'maxWidth': '140',
         'closeButton': false,
-        'className': 'custom',
         'closeOnClick': false,
         'autoClose': false,
         'className': 'church'
@@ -79,17 +78,17 @@ var tramStopStyle =
         {
         'maxWidth': '150',
         'closeButton': false,
-        'className': 'custom',
         'closeOnClick': false,
+        'autoClose': false,
         'className': 'tram'
         }
 
 var parkingStyle =
         {
-        'maxWidth': '150',
+        'maxWidth': '100',
         'closeButton': false,
-        'className': 'custom',
         'closeOnClick': false,
+        'autoClose': false,
         'className': 'parking'
         }
 
@@ -111,15 +110,20 @@ L.marker([49.19350741325973, 16.60659572870174], {icon: churchIcon}).addTo(map)
 
 L.marker([49.194339, 16.605624], {icon: parkingIcon}).addTo(map)
     .bindPopup(parkingPopup,parkingStyle)
+    .openPopup();
 
 L.marker([49.193312, 16.609511], {icon: tram4a9icon}).addTo(map)
     .bindPopup(tram4a9Popup,tramStopStyle)
+    .openPopup();
 
 L.marker([49.192235, 16.604408], {icon: tram5a6icon}).addTo(map)
     .bindPopup(tram5a6Popup,tramStopStyle)
+    .openPopup();
 
 L.marker([49.191683, 16.605349], {icon: tram12icon}).addTo(map)
     .bindPopup(tram12Popup,tramStopStyle)
+    .openPopup();
+    
 
 
 // GEOJSONS //
