@@ -93,6 +93,12 @@ html, body {
     width: 60vw;
 }
 
+@media only screen and (max-width: 600px) {
+  .ans {
+    font-size: 10vw;
+  }
+}
+
 .ans#little {
     text-align: center;
     font-family: Roboto-regular;
