@@ -132,7 +132,7 @@ html, body {
 }
 
 .infot {
-    text-align: center;
+    text-align: justify;
     font-size: 1.5vw;
     word-wrap: break-word;
     width: 50vw;
@@ -300,8 +300,8 @@ p {
     }
     
     .infot {
-        font-size: 3vw;
-        width: 80vw;
+        font-size: 4vw;
+        width: 75vw;
     }
     
     .mail {
