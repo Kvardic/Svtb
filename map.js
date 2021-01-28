@@ -30,21 +30,21 @@ var tram4a9icon = new L.Icon({
   iconUrl: 'Pictures/tram4a9.svg',
   iconSize: [54, 86],
   iconAnchor: [12, 41],
-  popupAnchor: [79, 37],
+  popupAnchor: [81, 37],
 });
 
 var tram5a6icon = new L.Icon({
   iconUrl: 'Pictures/tram5a6.svg',
   iconSize: [54, 86],
   iconAnchor: [12, 41],
-  popupAnchor: [-82, 38],
+  popupAnchor: [-84, 38],
 });
 
 var tram12icon = new L.Icon({
   iconUrl: 'Pictures/tram12.svg',
   iconSize: [25, 41],
   iconAnchor: [12, 41],
-  popupAnchor: [1, 55],
+  popupAnchor: [0, 55],
 });
 
 

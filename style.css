@@ -266,7 +266,7 @@ p {
 /* MOBILE */
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .inq {
         font-size: 4.7vw;
         margin-bottom: -3vw;
